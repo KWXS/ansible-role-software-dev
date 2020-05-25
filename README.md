@@ -1,10 +1,10 @@
-tenantcloud.software_dev
+kellermanagement.software_dev
 =========
 
 Ansible role for install dev software. This role include install:
 
   - nginx
-  - php@7.1
+  - php
   - mysql-connector-c
   - mysql-client
   - imagemagick
@@ -24,7 +24,7 @@ Ansible role for install dev software. This role include install:
 Requirements
 ------------
 
-Install tenantcloud.software_common
+Must be installed homebrew, ansible, python3
 
 Role Variables
 --------------
@@ -63,7 +63,7 @@ Example Playbook
         nvm_node_version: 
         pm2: 'true'
       roles:
-        - tenantcloud.software_dev
+        - ansible-role-software-dev
 
 License
 -------
@@ -73,4 +73,4 @@ BSD
 Author Information
 ------------------
 
-TenantCloud DevOps Team
+KWXS
